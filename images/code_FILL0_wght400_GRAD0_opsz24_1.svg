@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="code_FILL0_wght400_GRAD0_opsz24">
+    <path d="M0 0L100 0L100 100L0 100L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <path d="M33.3333 75L8.33333 50L33.3333 25L39.2708 30.9375L20.1042 50.1042L39.1667 69.1667L33.3333 75L33.3333 75ZM66.6667 75L60.7292 69.0625L79.8958 49.8958L60.8333 30.8333L66.6667 25L91.6667 50L66.6667 75L66.6667 75Z" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

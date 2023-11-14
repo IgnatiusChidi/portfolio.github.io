@@ -1,0 +1,935 @@
+/*/FONTS/*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/GothamBold.ttf');
+}
+
+@font-face {
+    font-family: 'GothamBlack';
+    src: url('fonts/Gotham-Black.otf');
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('fonts/GothamMedium.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*/BODY/*/
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*OVERLAY - When mobile nabar is active*/
+#overlay{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 700vh;
+}
+
+/*UNDERLAY - Background Image*/
+#underlay{
+    width: 100vw;
+    height: 110vh;
+    margin: 0px;
+    padding: 0px;
+    background: url('images/bbblurry.svg');
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*/NAVBAR/*/
+#navbar{
+    width: 100vw;
+    height: 10vh;
+    margin: 0px;
+    padding: 0px 5vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(41, 5, 54, 0.5);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logo{
+    font-size: 40px;
+    color: white;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+}
+
+#navUl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ul{
+    display: flex;
+    list-style: none;
+}
+
+#ul li a{
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#ul li a:hover{
+    color: #7209B7;
+}
+
+#contactBtn{
+    padding: 4px 15px;
+    font-size: 20px;
+    background-color: #7209B7;
+    border: 2px solid #7209B7;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#contactBtn:hover{
+    background: none;
+    color: #7209B7;
+}
+
+#hamburger{
+    cursor: pointer;
+    display: none;
+    z-index: 4;
+}
+
+#hamburger .line{
+    width: 35px;
+    height: 4px;
+    margin: 4px;
+    background-color: #7209B7;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+
+/*/HERO/*/
+#Hero{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px 5vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    background: rgba(41, 5, 54, 0.5);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#heroText{
+    font-size: 130px;
+    font-family: 'GothamBlack', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 120px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#name{
+    font-size: 40px;
+    line-height: 20px;
+}
+
+#heroText button{
+    font-size: 20px;
+    padding: 4px 15px;
+    color: white;
+    border-radius: 20px;
+    margin: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactBtn2{
+    border: 2px solid #7209B7;
+    background-color: #7209B7;
+}
+
+#contactBtn2:hover{
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+
+#worksButton{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+#worksButton:hover{
+    background-color: #7209B7;
+    color: white;
+    border: 2px solid #7209B7;
+}
+
+#heroButtons{
+    position: relative;
+    bottom: 70px;
+}
+
+
+/*/ABOUT/*/
+#about{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px 5vw;
+    background-color: #290536;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#aboutText{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 50vw;
+}
+
+#aboutText h1, #servicesLabel, #skillsLabel, #myWorksLabel{
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#aboutText p{
+    font-size: 25px;
+}
+
+#about img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #7209B7;
+}
+
+
+/*/SERVICES/*/
+#services{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 10vh 5vw;
+    display: grid;
+    justify-content: center;
+    background-color: #290536;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#servicesContainer{
+    width: 90vw;
+    height: 30vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.service{
+    width: 300px;
+    height: 80px;
+    background-color: #7209B7;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: grid;
+    align-content: center;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+.service:hover, .skill:hover{
+    transform: translateY(-2px);
+}
+
+.service h1{
+    font-size: 20px;
+    font-family: 'GothamMedium', Arial, Helvetica, sans-serif;
+}
+
+.service img{
+    width: 30px;
+}
+
+
+/*/SKILLS/*/
+#skills{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 15vh 5vw;
+    background-color: #290536;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#skillsLabel{
+    position: absolute;
+    left: 5vw;
+}
+
+#skillsDiv{
+    height: 70vh;
+    margin: 0px;
+    padding: 0px 10vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    width: 80vw;
+    box-sizing: border-box;
+}
+
+.skill{
+    width: 250px;
+    height: 70px;
+    background-color: #7209B7;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: grid;
+    align-content: center;
+    border: 2px solid white;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+.skill p{
+    font-size: 20px;
+    font-family: 'GothamMedium', Arial, Helvetica, sans-serif;
+}
+
+
+/*/MY WORKS/*/
+#myWorks{
+    height: 100vh;
+    margin: 0px;
+    padding: 10vh;
+    background-color: #290536;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+}
+
+#myWorksDiv{
+    height: 80vh;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    padding: 5vh 5vw;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.project{
+    width: 290px;
+    height: 240px;
+    margin: 0px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #7209B7;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.project:hover{
+    transform: translateY(-3px);
+    box-shadow: 5px 3px 10px #7209B7;
+}
+
+.project h1{
+    font-size: 30px;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+}
+
+.project p{
+    font-size: 20px;
+}
+
+.project img{
+    width: 35px;
+    float: right;
+}
+
+.workarrow{
+    height: 50px;
+    width: 230px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*/FOOTER/*/
+footer{
+    height: 30vh;
+    padding: 10vh 0px;
+    margin: 0px;
+    background-color: #290536;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    margin: 10px;
+    color: white;
+}
+
+#contactIcons{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contactIcons img{
+    width: 30px;
+}
+
+#copy{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+
+
+
+/*/MEDIA QUERIES/*/
+@media all and (max-width: 1200px) {
+    #heroText{
+        font-size: 120px;
+    }
+
+    #aboutText p{
+        font-size: 23px;
+    }
+
+    #about img{
+        width: 380px;
+    }
+
+    .service{
+        width: 280px;
+    }
+
+    .skill{
+        width: 200px;
+        height: 60px;
+    }
+
+    .skill p{
+        font-size: 20px;
+    }
+
+    #myWorksDiv{
+        justify-items: center;
+        padding: 5vh 20vw;
+        align-content: center;
+        grid-row-gap: 20px;
+        height: 80vh;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .project{
+        width: 250px;
+        height: 230px;
+        padding: 20px;
+    }
+
+    .project img{
+        width: 35px;
+        float: right;
+    }
+    
+    .workarrow{
+        height: 30px;
+        width: 210px;
+    }
+
+    .project h1{
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    #ul li a{
+        font-size: 18px;
+        margin: 15px;
+    }
+
+    #contactBtn{
+        font-size: 18px;
+    }
+
+    #heroText{
+        font-size: 100px;
+    }
+
+    #aboutText p{
+        font-size: 20px;
+    }
+
+    #aboutText{
+        width: 45vw;
+    }
+
+    #about img{
+        width: 300px;
+    }
+
+    #aboutText h1, #servicesLabel, #skillsLabel, #myWorksLabel{
+        font-size: 30px;
+    }
+
+    .service{
+        width: 220px;
+        padding: 5px 10px;
+    }
+
+    .service img{
+        width: 25px;
+    }
+
+    .service{
+        font-size: 18px;
+    }
+
+    .skill{
+        width: 150px;
+        height: 50px;
+    }
+
+    .skill h1{
+        font-size: 15px;
+    }
+
+    #myWorksDiv{
+        display: grid;
+        justify-items: center;
+        padding: 5vh 0px;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 85vw;
+    }
+
+    .project{
+        width: 190px;
+        height: 170px;
+        padding: 15px;
+        grid-column-gap: 2px;
+    }
+
+    .project img{
+        width: 25px;
+    }
+    
+    .workarrow{
+        height: 25px;
+        width: 160px;
+    }
+
+    .project h1{
+        font-size: 20px;
+    }
+
+    .project p{
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #navUl{
+        position: absolute;
+        width: 60vw;
+        height: 100vh;
+        right: 0px;
+        top: 0px;
+        background: #290536;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-content: flex-start;
+        padding: 15vh 0px;
+        transition: 0.3s;
+        left: -100vw;
+    }
+
+    #hamburger.lineAni .line:nth-child(1){
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    #hamburger.lineAni .line:nth-child(2){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    body.removeScroll{
+        overflow: hidden;
+    }
+
+    #ul{
+        display: grid;
+        height: 30vh;
+        justify-items: center;
+    }
+
+    #ul li a{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    #contactBtn{
+        padding: 4px 15px;
+        font-size: 20px;
+        background-color: #7209B7;
+        border: 2px solid #7209B7;
+        border-radius: 20px;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    #heroText{
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    #name{
+        font-size: 40px;
+        line-height: 10px;
+    }
+
+    #heroButtons{
+        bottom: 30px;
+    }
+
+    #about{
+        height: 100vh;
+        padding: 10vh 5vw;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        padding-bottom: 2vh;
+    }
+
+    #aboutText{
+        width: 90vw;
+        text-align: center;
+        margin: 20px;
+    }
+
+    #aboutText h1, #servicesLabel, #skillsLabel, #myWorksLabel{
+        font-size: 30px;
+    }
+
+    #aboutText p{
+        font-size: 20px;
+    }
+
+    #about img{
+        width: 300px;
+    }
+
+    #services{
+        padding: 10vh 5vw;
+        display: grid;
+        align-content: flex-start;
+    }
+
+    #servicesContainer{
+        height: 80vh;
+        padding: 2vh 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        align-content: center;
+    }
+
+    .service{
+        width: 70vw;
+        height: 70px;
+        padding: 10px 30px;
+    }
+
+    .service h1{
+        font-size: 18px;
+        font-family: 'GothamMedium', Arial, Helvetica, sans-serif;
+    }
+
+    .service img{
+        width: 25px;
+    }
+
+    #skills{
+        padding: 10vh 5vw;
+        align-content: center;
+        padding-bottom: 0vh;
+    }
+
+    #skillsDiv{
+        height: 70vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill{
+        width: 250px;
+        height: 70px;
+    }
+
+    .skill h1{
+        font-size: 20px;
+        font-family: 'GothamMedium', Arial, Helvetica, sans-serif;
+    }
+
+    #myWorks{
+        height: 170vh;
+        padding: 10vh 0px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #myWorksDiv{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #290536;
+        grid-row-gap: 10px;
+        padding: 0px;
+        align-content: flex-start;
+        justify-content: center;
+        justify-items: center;
+        height: max-content;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project{
+        width: 70vw;
+        height: 20vh;
+        padding: 20px 30px;
+        box-sizing: border-box;
+    }
+
+    .project h1{
+        font-size: 20px;
+    }
+
+    .project p{
+        font-size: 18px;
+    }
+
+    .project img{
+        width: 20px;
+    }
+
+    .workarrow{
+        width: 60vw;
+    }
+
+    .workarrow img{
+        width: 30px;
+    }
+
+    #navUl.active{
+        left: 0px;
+    }
+    #overlay.overlayClass{
+        display: block;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #ul li a{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    #heroText{
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    #name{
+        font-size: 35px;
+        line-height: 7px;
+    }
+
+    #heroButtons{
+        bottom: 25px;
+    }
+
+    #services{
+        padding: 10vh 5vw;
+        display: grid;
+        align-content: flex-start;
+    }
+
+    #servicesContainer{
+        height: 80vh;
+        padding: 2vh 0px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+        align-content: center;
+    }
+
+    .service{
+        width: 70vw;
+        height: 70px;
+        padding: 10px 30px;
+    }
+
+    .service h1{
+        font-size: 18px;
+        font-family: 'GothamMedium', Arial, Helvetica, sans-serif;
+    }
+
+    .service img{
+        width: 25px;
+    }
+
+    #skills{
+        height: 165vh;
+        padding: 5vh 5vw;
+        align-content: flex-start;
+        padding-bottom: 0vh;
+    }
+
+    #skillsLabel{
+        position: relative;
+        top: 0px;
+    }
+
+    #skillsDiv{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: flex-start;
+        padding: 5vh;
+    }
+
+    .skill{
+        width: 80vw;
+    }
+
+    .project{
+        width: 80vw;
+        height: 20vh;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .project h1{
+        font-size: 20px;
+    }
+
+    .project p{
+        font-size: 18px;
+    }
+
+    .project img{
+        width: 20px;
+    }
+
+    .workarrow{
+        width: 70vw;
+    }
+
+    .workarrow img{
+        width: 30px;
+    }
+
+    #navUl.active{
+        left: 0px;
+    }
+    #overlay.overlayClass{
+        display: block;
+    }
+}
